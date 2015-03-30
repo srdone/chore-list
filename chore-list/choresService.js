@@ -7,10 +7,15 @@
   /* @ngInject */
   function choreService() {
 
-    var chores = ['testChore'];
+    var chores = [];
+
+    var addChore = function (newChore) {
+      chores.push(newChore);
+    };
 
     var service = {
-      chores: chores
+      chores: chores,
+      addChore: addChore
     };
 
     return service;

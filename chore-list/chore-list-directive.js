@@ -8,6 +8,7 @@
   function ctChoreList() {
 
     return {
+      restrict: 'E',
       scope: {},
       bindToController: true,
       controller: 'ChoreListController',

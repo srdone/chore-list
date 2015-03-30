@@ -14,6 +14,13 @@
     vm.activate = activate;
     vm.title = 'ChoreListController';
     vm.choreList = choreService.chores;
+    vm.addChore = addChore;
+    vm.newChore = '';
+
+    function addChore () {
+      choreService.addChore(vm.newChore);
+      vm.newChore = '';
+    }
 
     activate();
 

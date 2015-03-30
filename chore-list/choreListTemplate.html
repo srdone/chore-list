@@ -1,2 +1,5 @@
-{{vm.title}}
-{{vm.choreList}}
+<input type="text" name="new-chore" ng-model="vm.newChore" placeholder="new chore">
+<button ng-click="vm.addChore()">Add Chore</button>
+<ul>
+  <li ng-repeat="chore in vm.choreList">{{chore}}</li>
+</ul>
